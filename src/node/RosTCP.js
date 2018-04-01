@@ -17,6 +17,8 @@ function RosTCP(options) {
       'It would be more efficent to use ascii (if possible)');
   }
   this.encoding = options.encoding || 'utf8';
+  
+  //
   Ros.call(this, options);
 
   if (!this.socket && (options.host || options.port)) {
